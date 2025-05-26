@@ -375,6 +375,11 @@ footer a:hover {
             width: 200px;
             height: 150px;
         }
+
+        .grid{
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     @media (max-width: 465px) {
@@ -385,6 +390,11 @@ footer a:hover {
 
         .logo {
             transform: scale(0.5);
+        }
+
+        .leyendas-grid{
+            display: flex;
+            flex-direction: column;
         }
     }
 

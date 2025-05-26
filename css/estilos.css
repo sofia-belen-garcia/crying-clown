@@ -11,7 +11,6 @@
 h1 {
     font-style: italic;
     font-size: 40px;
-    display: flex;
     padding: 5px;
 }
 
@@ -320,12 +319,23 @@ footer a:hover {
 
     h1 {
         font-size: 30px;
+        margin: 15px;
+    }
+    .acerca-de{
+        background-image: url(../img/img.fondo.media.jpg);
     }
 
     .logo {
-        transform: scale(0.7);
+        display: none;
     }
 
+    footer{
+        background-image: url(../img/img-fondo-footer-media.jpg);
+    }
+
+    .historias div div{
+        background-image: url(../img/img.fondo.media.jpg);
+    }
     @media (max-width: 765px) {
         .acerca-de div div img {
             width: 200px;

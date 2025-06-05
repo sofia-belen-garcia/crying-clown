@@ -230,11 +230,6 @@ main a:hover {
 
 /* CONTACTO */
 
-.contacto {
-    display: flex;
-    flex-direction: column;
-}
-
 .carousel-item img {
     width: 400px;
     height: auto;
@@ -498,3 +493,10 @@ footer a:hover {
         }
     }
 }
+
+/* MEDIA QUERYS EN CONTACTO */
+@media (max-width: 570px){
+form{
+        margin:0px !important;
+    }
+    }

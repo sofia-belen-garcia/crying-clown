@@ -1,0 +1,24 @@
+footer {
+    text-align: left;
+    background-image: url(../img/img-fondo-footer.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+
+    section {
+        h3 {
+            text-align: left;
+        }
+
+        span {
+            a {
+                color: white;
+
+                &:hover {
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
+    }
+}

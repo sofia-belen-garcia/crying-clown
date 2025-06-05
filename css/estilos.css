@@ -496,7 +496,7 @@ footer a:hover {
 
 /* MEDIA QUERYS EN CONTACTO */
 @media (max-width: 570px){
-form{
+form .row mb-3{
         margin:0px !important;
     }
     }

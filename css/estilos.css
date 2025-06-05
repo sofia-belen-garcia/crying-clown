@@ -316,7 +316,8 @@ footer a:hover {
         font-size: 30px;
         margin: 15px;
     }
-    .acerca-de{
+
+    .acerca-de {
         background-image: url(../img/img.fondo.media.jpg);
     }
 
@@ -324,13 +325,14 @@ footer a:hover {
         display: none;
     }
 
-    footer{
+    footer {
         background-image: url(../img/img-fondo-footer-media.jpg);
     }
 
-    .historias div div{
+    .historias div div {
         background-image: url(../img/img.fondo.media.jpg);
     }
+
     @media (max-width: 765px) {
         .acerca-de div div img {
             width: 200px;
@@ -348,19 +350,24 @@ footer a:hover {
         .payaso3 {
             display: none;
         }
-        .grid-img{
+
+        .grid-img {
             display: none;
         }
-        .grid{
+
+        .grid {
             display: flex;
         }
-        .coulrofobia{
+
+        .coulrofobia {
             font-size: 25px;
         }
-        .dan-miedo ol li h5{
+
+        .dan-miedo ol li h5 {
             font-size: 20px;
         }
-        .dan-miedo ol li p{
+
+        .dan-miedo ol li p {
             font-size: 15px;
         }
     }
@@ -371,7 +378,7 @@ footer a:hover {
             height: 150px;
         }
 
-        .grid{
+        .grid {
             display: flex;
             flex-direction: column;
         }
@@ -387,7 +394,7 @@ footer a:hover {
             transform: scale(0.5);
         }
 
-        .leyendas-grid{
+        .leyendas-grid {
             display: flex;
             flex-direction: column;
         }
@@ -495,8 +502,8 @@ footer a:hover {
 }
 
 /* MEDIA QUERYS EN CONTACTO */
-@media (max-width: 570px){
-form .row mb-3{
-        margin:0px !important;
+@media (max-width: 570px) {
+    .row mb-3 {
+        margin: 0px !important;
     }
-    }
+}

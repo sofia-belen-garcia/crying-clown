@@ -1,6 +1,6 @@
 h1 {
     font-style: italic;
-    font-size: 40px;
+    font-size:nth ($font-size,1);
     padding: 5px;
 }
 
@@ -13,7 +13,7 @@ header {
         .navbar {
             .navbar-expand-lg {
                 .bg-body-tertiary {
-                    background-color: #6c757d !important;
+                    background-color: $color-nav !important;
                     padding: 5px;
                 }
             }
@@ -26,19 +26,19 @@ header {
         }
 
         .btn-outline-success {
-            --bs-btn-color: #000000;
-            --bs-btn-border-color: #000000;
-            --bs-btn-hover-bg: #000000;
-            --bs-btn-hover-border-color: #000000;
-            --bs-btn-active-bg: #000000;
-            --bs-btn-active-border-color: #000000;
-            --bs-btn-disabled-color: #000000;
-            --bs-btn-disabled-border-color: #000000;
+            --bs-btn-color: $color-borde;
+            --bs-btn-border-color: $color-borde;
+            --bs-btn-hover-bg: $color-borde;
+            --bs-btn-hover-border-color: $color-borde;
+            --bs-btn-active-bg: $color-borde;
+            --bs-btn-active-border-color: $color-borde;
+            --bs-btn-disabled-color: $color-borde;
+            --bs-btn-disabled-border-color: $color-borde;
         }
     }
     a{
         &:hover{
-            color: white !important;
+            color: $color-enlace !important;
         }
     }
 }

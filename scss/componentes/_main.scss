@@ -1,10 +1,11 @@
 /*INDEX*/
+
 /*ACERCA DE INDEX*/
 .acerca-de {
     background-image: url(../img/img.fondo.jpg);
     background-attachment: fixed;
     background-size: cover;
-    color: white;
+    color: $color-enlace;
     text-align: center;
 
     div {
@@ -13,12 +14,12 @@
             font-size: 30px;
 
             a {
-                font-size: 35px;
+                font-size: nth($font-size, 3);
             }
         }
 
         p {
-            font-size: 18px;
+            font-size: nth($font-size, 4);
         }
     }
 
@@ -29,7 +30,7 @@
 
         div {
             a {
-                color: white;
+                color: $color-enlace;
                 font-size: 25px;
 
                 img {
@@ -55,7 +56,7 @@
 
     div {
         h2 {
-            font-size: 30px;
+            font-size: nth($font-size, 2);
         }
 
         p {
@@ -72,16 +73,16 @@
 
     h2 {
         text-align: center;
-        font-size: 30px;
+        font-size: nth($font-size, 2);
     }
 
     div {
         display: flex;
         align-items: center;
-        color: white;
+        color: $color-enlace;
 
         div {
-            border: 2px solid white;
+            border: 2px solid $color-enlace;
             margin: 5px;
             display: flex;
             flex-direction: column;
@@ -105,11 +106,10 @@
             }
 
             a {
-                font-size: 30px;
-                color: white;
+                font-size: nth($font-size, 2);
+                color: $color-enlace;
                 padding: 5px;
             }
         }
     }
 }
-

@@ -503,8 +503,9 @@ footer a:hover {
 
 /* MEDIA QUERYS EN CONTACTO */
 @media (max-width: 570px) {
-    .row mb-3 {
-        margin-left: 0px !important;
-        margin-right: 0px !important;
-    }
+    form .row{
+
+margin-inline: 0 !important
+
+}
 }

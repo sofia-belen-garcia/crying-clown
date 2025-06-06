@@ -507,5 +507,13 @@ footer a:hover {
 
 margin-inline: 0 !important
 
+
+}
+.row mb-3 {
+
+margin-left: 0px !important;
+
+margin-right: 0px !important;
+
 }
 }

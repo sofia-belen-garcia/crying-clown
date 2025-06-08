@@ -1,0 +1,216 @@
+/* MEDIA QUERIES INDEX */
+
+@media (max-width:904px) {
+    .acerca-de div p {
+        font-size: 15px;
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .acerca-de div h2 a {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:850px) {
+    .historias div div img {
+        width: 200px;
+        height: 270px;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin: 15px;
+    }
+
+    .acerca-de {
+        background-image: url(../img/img.fondo.media.jpg);
+    }
+
+    .logo {
+        display: none;
+    }
+
+    footer {
+        background-image: url(../img/img-fondo-footer-media.jpg);
+    }
+
+    .historias div div {
+        background-image: url(../img/img.fondo.media.jpg);
+    }
+
+    .acerca-de .acerca-de-imgs div .payaso3 {
+        display: none;
+    }
+
+    .acerca-de .acerca-de-imgs {
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 765px) {
+    .acerca-de div div img {
+        width: 200px;
+        height: 150px;
+    }
+}
+
+@media(max-width:695px) {
+    .historias div {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 619px) {
+    .acerca-de-imgs div a .payaso3 {
+        display: none;
+    }
+
+    .grid-img {
+        display: none;
+    }
+
+    .grid {
+        display: flex;
+    }
+
+    .coulrofobia {
+        font-size: 25px;
+    }
+
+    .dan-miedo ol li h5 {
+        font-size: 20px;
+    }
+
+    .dan-miedo ol li p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .leyendas-index .pennywise {
+        width: 200px;
+        height: 150px;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .acerca-de .acerca-de-imgs div .payaso2 {
+        display: none;
+    }
+
+    .acerca-de .acerca-de-imgs {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 465px) {
+    h1 {
+        font-size: 20px;
+        padding: 0;
+    }
+
+    .logo {
+        transform: scale(0.5);
+    }
+
+    .leyendas-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .acerca-de .acerca-de-imgs .payaso2 {
+        display: none;
+    }
+}
+
+@media (max-width: 420px) {
+    .leyendas-index .pennywise {
+        display: none;
+    }
+}
+
+@media (max-width: 417px) {
+    .acerca-de .acerca-de-imgs div a .payaso2 {
+        display: none;
+    }
+
+    .acerca-de .acerca-de-imgs {
+        justify-content: center;
+    }
+}
+
+/* MEDIA QUERIES ACERCA DE */
+@media(max-width:869px){
+.grid .grid-img {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+}
+.grid .grid-img div .payasito10{
+    display: none;
+}
+.grid .grid-img div .payasito9{
+    display: none;
+}
+.grid .grid-img div .payasito7{
+    display: none;
+}
+.grid .grid-img div .payasito6{
+    display: none;
+}
+}
+@media (max-width: 840px) {
+    .acerca-de .acerca-de-imgs div a .payasito3 {
+        display: none;
+    }
+
+    .grid .dan-miedo h4 {
+        font-size: 25px;
+    }
+
+    .grid .dan-miedo ol {
+        font-size: 15px;
+    }
+
+    .grid .dan-miedo ol li h5 {
+        font-size: 20px;
+    }
+
+    .coulrofobia h3 {
+        font-size: 25px;
+    }
+
+    .coulrofobia p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 609px) {
+    .grid .grid-img div img {
+        display: none;
+    }
+
+    .grid .dan-miedo h4 {
+        font-size: 20px;
+    }
+
+    .grid .dan-miedo ol {
+        font-size: 10px;
+    }
+
+    .grid .dan-miedo ol li h5 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 538px) {
+    .acerca-de .acerca-de-imgs div a .payasito2 {
+        display: none;
+    }
+}

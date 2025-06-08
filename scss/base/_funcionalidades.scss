@@ -1,9 +1,38 @@
-/*VARIABLES COLORES*/
+//VARIABLES COLORES
 
-$color-nav: #6c757d ;
+$color-nav: #6c757d;
 $color-enlace: white;
 $color-bordes: #000000;
 
-/*LISTA FONT SIZE*/
+//LISTA FONT SIZE
 
-$font-size:(40px, 30px, 35px, 18px, 25px);
+$font-size: (
+    40px,
+    30px,
+    35px,
+    18px,
+    25px,
+    20px
+);
+
+//EXTENDS
+
+%boton {
+    color: $color-enlace;
+        font-size: nth ($font-size, 5);
+        text-decoration: none;
+}
+
+%boton-titulo{
+    font-size: nth($font-size, 3);
+                color: $color-bordes;
+                text-decoration: none;
+}
+
+//MIXIN
+
+@mixin flex ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}

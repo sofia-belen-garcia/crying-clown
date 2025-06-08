@@ -9,20 +9,22 @@
 body {
     font-family: "IBM Plex Serif", serif;
     background-color: #6c757d27;
-
     h1 {
-        .titulo{
+    .titulo {
         font-style: italic;
         font-size: 40px;
         padding: 5px;
         color: $color-bordes;
         text-decoration: none;
-        &:hover{
+
+        &:hover {
             color: $color-bordes !important;
-        }
         }
     }
 }
+}
+
+
 
 
 nav.navbar.navbar-expand-lg.bg-body-tertiary {

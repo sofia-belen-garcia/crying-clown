@@ -1,6 +1,16 @@
-/*VARIABLES COLORES*/
-/*LISTA FONT SIZE*/
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+.acerca-de .acerca-de-imgs div a, .acerca-de a {
+  color: white;
+  font-size: nth 40px, 30px, 35px, 18px, 25px, 20px, 5;
+  text-decoration: none;
+}
+
+section h2 a, .historias h2 a, .leyendas-index div h2 a {
+  font-size: 35px;
+  color: #000000;
+  text-decoration: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -29,7 +39,7 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
 
 h1 {
   font-style: italic;
-  font-size: nth 40px, 30px, 35px, 18px, 25px, 1;
+  font-size: nth 40px, 30px, 35px, 18px, 25px, 20px, 1;
   padding: 5px;
 }
 
@@ -74,33 +84,29 @@ a:hover {
   color: white;
   text-decoration: none;
 }
+.acerca-de div h2 a:hover {
+  color: #000000 !important;
+  background-color: none !important;
+}
 .acerca-de div p {
   font-size: 18px;
-}
-.acerca-de a {
-  color: white;
-  font-size: 25px;
-  text-decoration: none;
 }
 .acerca-de .acerca-de-imgs {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   margin: 15px;
-}
-.acerca-de .acerca-de-imgs div a {
-  color: white;
-  font-size: 25px;
 }
 .acerca-de .acerca-de-imgs div a img {
   width: 250px;
   height: 200px;
 }
-
 /*LEYENDAS INDEX*/
 .leyendas-index {
   display: flex;
-  margin: 15px 0;
+  justify-content: center;
   align-items: center;
+  margin: 15px 0;
 }
 .leyendas-index .pennywise {
   width: 400px;
@@ -109,11 +115,6 @@ a:hover {
 .leyendas-index div h2 {
   text-align: center;
   font-size: 30px;
-}
-.leyendas-index div h2 a {
-  font-size: 35px;
-  color: #000000;
-  text-decoration: none;
 }
 .leyendas-index div h2 a:hover {
   color: white !important;
@@ -131,25 +132,22 @@ a:hover {
   text-align: center;
   font-size: 30px;
 }
-.historias h2 a {
-  font-size: 35px;
-  color: #000000;
-  text-decoration: none;
-}
 .historias h2 a:hover {
   color: white !important;
 }
 .historias div {
   display: flex;
+  justify-content: center;
   align-items: center;
   color: white;
 }
 .historias div div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   border: 2px solid white;
   margin: 5px;
-  display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   background-image: url(../img/img.fondo.jpg);
   background-attachment: fixed;
   background-size: cover;
@@ -182,11 +180,6 @@ section h2 {
   text-align: center;
   font-size: 30px;
 }
-section h2 a {
-  font-size: 35px;
-  color: #000000;
-  text-decoration: none;
-}
 section h2 a:hover {
   color: white !important;
 }
@@ -198,6 +191,58 @@ form .row {
 .row mb-3 {
   margin-left: 0px !important;
   margin-right: 0px !important;
+}
+
+/*ACERCA DE PAGINA*/
+.coulrofobia {
+  margin: 20px;
+}
+.coulrofobia h3 {
+  text-align: left;
+  font-size: nth 40px, 30px, 35px, 18px, 25px, 20px, 2;
+}
+.coulrofobia p {
+  font-size: nth 40px, 30px, 35px, 18px, 25px, 20px, 6;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-auto-rows: auto;
+  gap: 10px;
+}
+.grid .dan-miedo {
+  margin: 15px;
+}
+.grid .dan-miedo h4 {
+  font-size: nth 40px, 30px, 35px, 18px, 25px, 20px, 2;
+  margin: 10px;
+}
+.grid .dan-miedo h4 ol {
+  text-align: left;
+  margin: 10px;
+  font-size: nth 40px, 30px, 35px, 18px, 25px, 20px, 6;
+}
+.grid .dan-miedo h4 ol li h5 {
+  font-size: nth 40px, 30px, 35px, 18px, 25px, 20px, 5;
+  margin: 10px;
+}
+.grid .grid-img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  gap: 5px;
+}
+.grid .grid-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.grid .grid-img .payasito1 {
+  grid-column: span 2;
+}
+.grid .grid-img .payasito8 {
+  grid-column: span 2;
 }
 
 footer {
@@ -250,6 +295,183 @@ footer section h3 a:hover {
 }
 footer section h3 {
   text-align: left;
+}
+
+/* MEDIA QUERIES INDEX */
+@media (max-width: 904px) {
+  .acerca-de div p {
+    font-size: 15px;
+    padding: 15px;
+    margin: 10px;
+  }
+  .acerca-de div h2 a {
+    font-size: 30px;
+  }
+}
+@media (max-width: 850px) {
+  .historias div div img {
+    width: 200px;
+    height: 270px;
+  }
+  h1 {
+    font-size: 30px;
+    margin: 15px;
+  }
+  .acerca-de {
+    background-image: url(../img/img.fondo.media.jpg);
+  }
+  .logo {
+    display: none;
+  }
+  footer {
+    background-image: url(../img/img-fondo-footer-media.jpg);
+  }
+  .historias div div {
+    background-image: url(../img/img.fondo.media.jpg);
+  }
+  .acerca-de .acerca-de-imgs div .payaso3 {
+    display: none;
+  }
+  .acerca-de .acerca-de-imgs {
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+}
+@media (max-width: 765px) {
+  .acerca-de div div img {
+    width: 200px;
+    height: 150px;
+  }
+}
+@media (max-width: 695px) {
+  .historias div {
+    flex-direction: column;
+  }
+}
+@media (max-width: 619px) {
+  .acerca-de-imgs div a .payaso3 {
+    display: none;
+  }
+  .grid-img {
+    display: none;
+  }
+  .grid {
+    display: flex;
+  }
+  .coulrofobia {
+    font-size: 25px;
+  }
+  .dan-miedo ol li h5 {
+    font-size: 20px;
+  }
+  .dan-miedo ol li p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 600px) {
+  .leyendas-index .pennywise {
+    width: 200px;
+    height: 150px;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .acerca-de .acerca-de-imgs div .payaso2 {
+    display: none;
+  }
+  .acerca-de .acerca-de-imgs {
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 465px) {
+  h1 {
+    font-size: 20px;
+    padding: 0;
+  }
+  .logo {
+    transform: scale(0.5);
+  }
+  .leyendas-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .acerca-de .acerca-de-imgs .payaso2 {
+    display: none;
+  }
+}
+@media (max-width: 420px) {
+  .leyendas-index .pennywise {
+    display: none;
+  }
+}
+@media (max-width: 417px) {
+  .acerca-de .acerca-de-imgs div a .payaso2 {
+    display: none;
+  }
+  .acerca-de .acerca-de-imgs {
+    justify-content: center;
+  }
+}
+/* MEDIA QUERIES ACERCA DE */
+@media (max-width: 869px) {
+  .grid .grid-img {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+  }
+  .grid .grid-img div .payasito10 {
+    display: none;
+  }
+  .grid .grid-img div .payasito9 {
+    display: none;
+  }
+  .grid .grid-img div .payasito7 {
+    display: none;
+  }
+  .grid .grid-img div .payasito6 {
+    display: none;
+  }
+}
+@media (max-width: 840px) {
+  .acerca-de .acerca-de-imgs div a .payasito3 {
+    display: none;
+  }
+  .grid .dan-miedo h4 {
+    font-size: 25px;
+  }
+  .grid .dan-miedo ol {
+    font-size: 15px;
+  }
+  .grid .dan-miedo ol li h5 {
+    font-size: 20px;
+  }
+  .coulrofobia h3 {
+    font-size: 25px;
+  }
+  .coulrofobia p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 609px) {
+  .grid .grid-img div img {
+    display: none;
+  }
+  .grid .dan-miedo h4 {
+    font-size: 20px;
+  }
+  .grid .dan-miedo ol {
+    font-size: 10px;
+  }
+  .grid .dan-miedo ol li h5 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 538px) {
+  .acerca-de .acerca-de-imgs div a .payasito2 {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

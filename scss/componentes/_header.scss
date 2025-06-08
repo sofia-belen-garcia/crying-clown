@@ -1,6 +1,6 @@
 h1 {
     font-style: italic;
-    font-size:nth ($font-size,1);
+    font-size: nth ($font-size, 1);
     padding: 5px;
 }
 
@@ -9,36 +9,26 @@ header {
     top: 0px;
     z-index: 1;
 
-    nav {
-        .navbar {
-            .navbar-expand-lg {
-                .bg-body-tertiary {
-                    background-color: $color-nav !important;
-                    padding: 5px;
-                }
-            }
-        }
-
-        ul {
-            li {
-                margin: 15px;
-            }
-        }
-
-        .btn-outline-success {
-            --bs-btn-color: $color-borde;
-            --bs-btn-border-color: $color-borde;
-            --bs-btn-hover-bg: $color-borde;
-            --bs-btn-hover-border-color: $color-borde;
-            --bs-btn-active-bg: $color-borde;
-            --bs-btn-active-border-color: $color-borde;
-            --bs-btn-disabled-color: $color-borde;
-            --bs-btn-disabled-border-color: $color-borde;
+    ul {
+        li {
+            margin: 15px;
         }
     }
-    a{
-        &:hover{
-            color: $color-enlace !important;
-        }
+
+    .btn-outline-success {
+        --bs-btn-color: $color-borde;
+        --bs-btn-border-color: $color-borde;
+        --bs-btn-hover-bg: $color-borde;
+        --bs-btn-hover-border-color: $color-borde;
+        --bs-btn-active-bg: $color-borde;
+        --bs-btn-active-border-color: $color-borde;
+        --bs-btn-disabled-color: $color-borde;
+        --bs-btn-disabled-border-color: $color-borde;
+    }
+}
+
+a {
+    &:hover {
+        color: $color-enlace !important;
     }
 }

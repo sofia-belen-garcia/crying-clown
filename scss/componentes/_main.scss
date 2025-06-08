@@ -15,12 +15,20 @@
 
             a {
                 font-size: nth($font-size, 3);
+                color: $color-enlace;
+                text-decoration: none;
             }
         }
 
         p {
             font-size: nth($font-size, 4);
         }
+    }
+
+    a {
+        color: $color-enlace;
+        font-size: 25px;
+        text-decoration: none;
     }
 
     .acerca-de-imgs {
@@ -56,15 +64,27 @@
 
     div {
         h2 {
-            font-size: nth($font-size, 2);
-        }
-
-        p {
-            padding: 15px;
             text-align: center;
+            font-size: nth($font-size, 2);
+
+            a {
+                font-size: nth($font-size, 3);
+                color: $color-bordes;
+                text-decoration: none;
+
+                &:hover {
+                    color: $color-enlace !important;
+                }
+            }
         }
     }
+
+    p {
+        padding: 15px;
+        text-align: center;
+    }
 }
+
 
 /*HISTORIAS INDEX*/
 
@@ -74,6 +94,16 @@
     h2 {
         text-align: center;
         font-size: nth($font-size, 2);
+
+        a {
+            font-size: nth($font-size, 3);
+            color: $color-bordes;
+            text-decoration: none;
+
+            &:hover {
+                color: $color-enlace !important;
+            }
+        }
     }
 
     div {
@@ -93,12 +123,20 @@
 
             h3 {
                 text-align: center;
+
+                a {
+                    text-decoration: none;
+                }
             }
 
             img {
                 width: 250px;
                 height: 320px;
                 margin: 10px;
+            }
+
+            a {
+                text-decoration: none;
             }
 
             p {
@@ -112,4 +150,36 @@
             }
         }
     }
+}
+
+/*CONTACTO INDEX*/
+
+section {
+    h2 {
+        text-align: center;
+        font-size: nth($font-size, 2);
+
+        a {
+            font-size: nth($font-size, 3);
+            color: $color-bordes;
+            text-decoration: none;
+
+            &:hover {
+                color: $color-enlace !important;
+            }
+        }
+    }
+}
+
+form .row {
+
+    margin-inline: 0 !important
+}
+
+.row mb-3 {
+
+    margin-left: 0px !important;
+
+    margin-right: 0px !important;
+
 }

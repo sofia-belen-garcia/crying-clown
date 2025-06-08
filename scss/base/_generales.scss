@@ -5,15 +5,27 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: "IBM Plex Serif", serif;
     background-color: #6c757d27;
-}
-a {
-    color: black;
-    text-decoration: none;
-    &:hover{
-        background-color: black;
-        color: white;
+
+    h1 {
+        .titulo{
+        font-style: italic;
+        font-size: 40px;
+        padding: 5px;
+        color: $color-bordes;
+        text-decoration: none;
+        &:hover{
+            color: $color-bordes !important;
+        }
+        }
     }
+}
+
+
+nav.navbar.navbar-expand-lg.bg-body-tertiary {
+    background-color: #6c757d !important;
+    padding: 5px;
 }

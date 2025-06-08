@@ -3,7 +3,7 @@ footer {
     background-image: url(../img/img-fondo-footer.jpg);
     background-size: cover;
     background-attachment: fixed;
-    color: white;
+    color: $color-enlace;
 
     section {
         h3 {
@@ -12,13 +12,65 @@ footer {
 
         span {
             a {
-                color: white;
+                color: $color-enlace;
+                text-decoration: none;
 
                 &:hover {
-                    background-color: black;
-                    color: white;
+                    background-color: $color-bordes;
+                    color: $color-enlace;
+                }
+            }
+        }
+
+        span {
+            a {
+                color: $color-enlace;
+                text-decoration: none;
+
+                &:hover {
+                    background-color: $color-bordes;
+                    color: $color-enlace;
+                }
+            }
+        }
+
+        span {
+            a {
+                color: $color-enlace;
+                text-decoration: none;
+
+                &:hover {
+                    background-color: $color-bordes;
+                    color: $color-enlace;
                 }
             }
         }
     }
-}
+
+        section {
+            h3 {
+                text-align: left;
+            }
+        }
+
+        section {
+            h3 {
+                text-align: left;
+
+                a {
+                    color: $color-enlace;
+                    text-decoration: none;
+
+                    &:hover {
+                        background-color: $color-bordes;
+                        color: $color-enlace;
+                    }
+                }
+            }
+        }
+
+        section {
+            h3 {
+                text-align: left;
+            }
+        }}

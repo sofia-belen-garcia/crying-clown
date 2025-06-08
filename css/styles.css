@@ -1,9 +1,255 @@
-@import "../scss/base/_funcionalidades.scss";
-@import "../scss/base/_generales.scss";
-@import "../scss/componentes/_header.scss";
-@import "../scss/componentes/_main.scss";
-@import "../scss/componentes/_footer.scss";
-@import "../scss/base/_querys.scss";
+/*VARIABLES COLORES*/
+/*LISTA FONT SIZE*/
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "IBM Plex Serif", serif;
+  background-color: rgba(108, 117, 125, 0.1529411765);
+}
+body h1 .titulo {
+  font-style: italic;
+  font-size: 40px;
+  padding: 5px;
+  color: #000000;
+  text-decoration: none;
+}
+body h1 .titulo:hover {
+  color: #000000 !important;
+}
+
+nav.navbar.navbar-expand-lg.bg-body-tertiary {
+  background-color: #6c757d !important;
+  padding: 5px;
+}
+
+h1 {
+  font-style: italic;
+  font-size: nth 40px, 30px, 35px, 18px, 25px, 1;
+  padding: 5px;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+header ul li {
+  margin: 15px;
+}
+header .btn-outline-success {
+  --bs-btn-color: $color-borde;
+  --bs-btn-border-color: $color-borde;
+  --bs-btn-hover-bg: $color-borde;
+  --bs-btn-hover-border-color: $color-borde;
+  --bs-btn-active-bg: $color-borde;
+  --bs-btn-active-border-color: $color-borde;
+  --bs-btn-disabled-color: $color-borde;
+  --bs-btn-disabled-border-color: $color-borde;
+}
+
+a:hover {
+  color: white !important;
+}
+
+/*INDEX*/
+/*ACERCA DE INDEX*/
+.acerca-de {
+  background-image: url(../img/img.fondo.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+.acerca-de div h2 {
+  text-align: center;
+  font-size: 30px;
+}
+.acerca-de div h2 a {
+  font-size: 35px;
+  color: white;
+  text-decoration: none;
+}
+.acerca-de div p {
+  font-size: 18px;
+}
+.acerca-de a {
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+}
+.acerca-de .acerca-de-imgs {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 15px;
+}
+.acerca-de .acerca-de-imgs div a {
+  color: white;
+  font-size: 25px;
+}
+.acerca-de .acerca-de-imgs div a img {
+  width: 250px;
+  height: 200px;
+}
+
+/*LEYENDAS INDEX*/
+.leyendas-index {
+  display: flex;
+  margin: 15px 0;
+  align-items: center;
+}
+.leyendas-index .pennywise {
+  width: 400px;
+  height: 300px;
+}
+.leyendas-index div h2 {
+  text-align: center;
+  font-size: 30px;
+}
+.leyendas-index div h2 a {
+  font-size: 35px;
+  color: #000000;
+  text-decoration: none;
+}
+.leyendas-index div h2 a:hover {
+  color: white !important;
+}
+.leyendas-index p {
+  padding: 15px;
+  text-align: center;
+}
+
+/*HISTORIAS INDEX*/
+.historias {
+  margin: 15px;
+}
+.historias h2 {
+  text-align: center;
+  font-size: 30px;
+}
+.historias h2 a {
+  font-size: 35px;
+  color: #000000;
+  text-decoration: none;
+}
+.historias h2 a:hover {
+  color: white !important;
+}
+.historias div {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.historias div div {
+  border: 2px solid white;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-image: url(../img/img.fondo.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.historias div div h3 {
+  text-align: center;
+}
+.historias div div h3 a {
+  text-decoration: none;
+}
+.historias div div img {
+  width: 250px;
+  height: 320px;
+  margin: 10px;
+}
+.historias div div a {
+  text-decoration: none;
+}
+.historias div div p {
+  text-align: center;
+}
+.historias div div a {
+  font-size: 30px;
+  color: white;
+  padding: 5px;
+}
+
+/*CONTACTO INDEX*/
+section h2 {
+  text-align: center;
+  font-size: 30px;
+}
+section h2 a {
+  font-size: 35px;
+  color: #000000;
+  text-decoration: none;
+}
+section h2 a:hover {
+  color: white !important;
+}
+
+form .row {
+  margin-inline: 0 !important;
+}
+
+.row mb-3 {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+footer {
+  text-align: left;
+  background-image: url(../img/img-fondo-footer.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+footer section h3 {
+  text-align: left;
+}
+footer section span a {
+  color: white;
+  text-decoration: none;
+}
+footer section span a:hover {
+  background-color: #000000;
+  color: white;
+}
+footer section span a {
+  color: white;
+  text-decoration: none;
+}
+footer section span a:hover {
+  background-color: #000000;
+  color: white;
+}
+footer section span a {
+  color: white;
+  text-decoration: none;
+}
+footer section span a:hover {
+  background-color: #000000;
+  color: white;
+}
+footer section h3 {
+  text-align: left;
+}
+footer section h3 {
+  text-align: left;
+}
+footer section h3 a {
+  color: white;
+  text-decoration: none;
+}
+footer section h3 a:hover {
+  background-color: #000000;
+  color: white;
+}
+footer section h3 {
+  text-align: left;
+}
 
 /*# sourceMappingURL=styles.css.map */

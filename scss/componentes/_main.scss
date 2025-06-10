@@ -95,7 +95,7 @@
 
     h2 {
         text-align: center;
-        font-size: nth($font-size, 2);
+        font-size: nth ($font-size, 2);
 
         a {
             @extend %boton-titulo;
@@ -245,3 +245,65 @@ form .row {
         }
     }
 }
+
+/*LEYENDAS PAGINA*/
+
+.leyendas-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 10px;
+    margin: 10px;
+
+    div {
+        text-align: center;
+        border: 2px solid $color-bordes;
+        background-color: $color-fondo-tarjetas;
+
+        h3 {
+            text-align: center;
+        }
+
+        img {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        a {
+            @extend %boton-titulo;
+        }
+    }
+}
+
+/*HISTORIAS PAGINA*/
+    .historias {
+        div {
+            div {
+                border: 2px solid white;
+                margin: 5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                background-image: url(../img/img.fondo.jpg);
+                background-attachment: fixed;
+                background-size: cover;
+
+                img {
+                    width: 250px;
+                    height: 320px;
+                    margin: 10px;
+                }
+
+                p {
+                    text-align: center;
+                }
+
+                a {
+                    font-size: 30px;
+                    color: white;
+                    padding: 5px;
+                }
+            }
+        }
+    }

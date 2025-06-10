@@ -5,7 +5,7 @@
   text-decoration: none;
 }
 
-section h2 a, .historias h2 a, .leyendas-index div h2 a {
+.leyendas-grid div a, section h2 a, .historias h2 a, .leyendas-index div h2 a {
   font-size: 35px;
   color: #000000;
   text-decoration: none;
@@ -130,7 +130,7 @@ a:hover {
 }
 .historias h2 {
   text-align: center;
-  font-size: 30px;
+  font-size: nth 40px, 30px, 35px, 18px, 25px, 20px, 2;
 }
 .historias h2 a:hover {
   color: white !important;
@@ -243,6 +243,52 @@ form .row {
 }
 .grid .grid-img .payasito8 {
   grid-column: span 2;
+}
+
+/*LEYENDAS PAGINA*/
+.leyendas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  gap: 10px;
+  margin: 10px;
+}
+.leyendas-grid div {
+  text-align: center;
+  border: 2px solid #000000;
+  background-color: rgba(108, 117, 125, 0.2666666667);
+}
+.leyendas-grid div h3 {
+  text-align: center;
+}
+.leyendas-grid div img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
+/*HISTORIAS PAGINA*/
+.historias div div {
+  border: 2px solid white;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-image: url(../img/img.fondo.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.historias div div img {
+  width: 250px;
+  height: 320px;
+  margin: 10px;
+}
+.historias div div p {
+  text-align: center;
+}
+.historias div div a {
+  font-size: 30px;
+  color: white;
+  padding: 5px;
 }
 
 footer {
@@ -471,6 +517,20 @@ footer section h3 {
 @media (max-width: 538px) {
   .acerca-de .acerca-de-imgs div a .payasito2 {
     display: none;
+  }
+}
+/*MEDIA QUERYS HISTORIAS*/
+@media (max-width: 880px) {
+  .historias div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 5px;
+  }
+}
+@media (max-width: 690px) {
+  .historias div {
+    grid-template-columns: 1fr;
   }
 }
 

@@ -218,16 +218,27 @@
 
 /*MEDIA QUERYS HISTORIAS*/
 
-@media (max-width: 880px){
+@media (max-width: 1020px){
     .historias div {display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-auto-rows: auto;
         gap: 5px
     }
 }
 
-@media (max-width: 690px){
+@media (max-width: 1126px){
     .historias div {
-    grid-template-columns: 1fr;
+    display: grid;
+        grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+        gap: 5px
+    }
+}
+@media (max-width: 796px){
+    .historias div{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        gap: 5px;
     }
 }

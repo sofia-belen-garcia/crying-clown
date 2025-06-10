@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-.acerca-de .acerca-de-imgs div a, .acerca-de a {
+.historias div div a, .acerca-de .acerca-de-imgs div a, .acerca-de a {
   color: white;
   font-size: nth 40px, 30px, 35px, 18px, 25px, 20px, 5;
   text-decoration: none;
@@ -268,11 +268,12 @@ form .row {
 }
 /*HISTORIAS PAGINA*/
 .historias div div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
   border: 2px solid white;
   margin: 5px;
-  display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   background-image: url(../img/img.fondo.jpg);
   background-attachment: fixed;
   background-size: cover;
@@ -286,8 +287,6 @@ form .row {
   text-align: center;
 }
 .historias div div a {
-  font-size: 30px;
-  color: white;
   padding: 5px;
 }
 
@@ -355,13 +354,12 @@ footer section h3 {
   }
 }
 @media (max-width: 850px) {
+  body h1 .titulo {
+    font-size: 25px;
+  }
   .historias div div img {
     width: 200px;
     height: 270px;
-  }
-  h1 {
-    font-size: 30px;
-    margin: 15px;
   }
   .acerca-de {
     background-image: url(../img/img.fondo.media.jpg);

@@ -37,3 +37,10 @@ $font-size: (
     justify-content: $justify;
     align-items: $align;
 }
+
+@mixin grid ($display, $columns, $rows, $gap){
+    display: $display;
+    grid-template-columns: $columns;
+    grid-auto-rows: $rows;
+    gap: $gap;
+}

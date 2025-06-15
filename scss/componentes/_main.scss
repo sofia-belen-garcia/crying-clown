@@ -2,7 +2,7 @@
 
 /*ACERCA DE INDEX*/
 .acerca-de {
-    background-image: url(../img/img.fondo.jpg);
+    background-image: url(../img/img.fondo.png);
     background-attachment: fixed;
     background-size: cover;
     color: $color-enlace;
@@ -14,7 +14,7 @@
             font-size: 30px;
 
             a {
-                font-size: nth($font-size, 3);
+                font-size: nth($font-size, 3) !important;
                 color: $color-enlace;
                 text-decoration: none;
 
@@ -26,7 +26,7 @@
         }
 
         p {
-            font-size: nth($font-size, 4);
+            font-size: nth($font-size, 6);
         }
     }
 
@@ -45,6 +45,12 @@
                 img {
                     width: 250px;
                     height: 200px;
+                    transition: 1s;
+
+                    &:hover {
+                        transform: scale(110%);
+                        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+                    }
                 }
             }
         }
@@ -64,6 +70,11 @@
     .pennywise {
         width: 400px;
         height: 300px;
+        transition: 1s;
+                    &:hover{
+                        transform: scale(90%);
+                        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+                    }
     }
 
     div {
@@ -111,11 +122,10 @@
         color: $color-enlace;
 
         div {
-            @include flex (flex, space-evenly, center);
+            @include flex (flex, center, center);
             border: 2px solid $color-enlace;
             margin: 5px;
-            flex-direction: column;
-            background-image: url(../img/img.fondo.jpg);
+            background-image: url(../img/img.fondo.png);
             background-attachment: fixed;
             background-size: cover;
 
@@ -131,6 +141,12 @@
                 width: 250px;
                 height: 320px;
                 margin: 10px;
+                transition: 1s;
+
+                &:hover {
+                    transform: scale(110%);
+                    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+                }
             }
 
             a {
@@ -188,11 +204,11 @@ form .row {
 
     h3 {
         text-align: left;
-        font-size: nth ($font-size, 2);
+        font-size: nth($font-size, 5);
     }
 
     p {
-        font-size: nth ($font-size, 6);
+        font-size: nth($font-size, 6);
     }
 }
 
@@ -234,6 +250,7 @@ form .row {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            
         }
 
         .payasito1 {
@@ -256,6 +273,11 @@ form .row {
         text-align: center;
         border: 2px solid $color-bordes;
         background-color: $color-fondo-tarjetas;
+                    transition: 1s;
+                    &:hover{
+                        transform: scale(90%);
+                        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+                    }
 
         h3 {
             text-align: center;
@@ -277,11 +299,11 @@ form .row {
 .historias {
     div {
         div {
-            @include flex (flex, space-evenly, baseline);
+            @include flex (flex, center, center);
             border: 2px solid $color-enlace;
             margin: 5px;
             flex-direction: column;
-            background-image: url(../img/img.fondo.jpg);
+            background-image: url(../img/img.fondo.png);
             background-attachment: fixed;
             background-size: cover;
 
@@ -301,4 +323,11 @@ form .row {
             }
         }
     }
+}
+
+/* PAGINA CONTACTO*/
+
+.carousel-item img {
+    width: 400px;
+    height: auto;
 }

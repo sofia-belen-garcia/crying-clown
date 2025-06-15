@@ -19,8 +19,8 @@ $font-size: (
 //EXTENDS
 
 %boton {
-    color: $color-enlace;
-        font-size: nth ($font-size, 5);
+        color: $color-enlace;
+        font-size: nth ($font-size, 2);
         text-decoration: none;
 }
 

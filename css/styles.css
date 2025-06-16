@@ -126,7 +126,6 @@ a:hover {
 }
 .leyendas-index .pennywise:hover {
   transform: scale(90%);
-  box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.7);
 }
 .leyendas-index div h2 {
   text-align: center;
@@ -323,7 +322,7 @@ form .row {
 
 footer {
   text-align: left;
-  background-image: url(../../img/img-fondo-footer-media.png);
+  background-image: url(../../img/img-fondo-footer.png);
   background-size: cover;
   background-attachment: fixed;
   color: white;
@@ -380,6 +379,11 @@ footer section h3 {
 }
 
 /* MEDIA QUERIES INDEX */
+@media (max-width: 1131px) {
+  .historias div .sandown {
+    display: none;
+  }
+}
 @media (max-width: 904px) {
   .acerca-de div p {
     font-size: 15px;

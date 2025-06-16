@@ -1,4 +1,9 @@
 /* MEDIA QUERIES INDEX */
+@media (max-width: 1131px){
+        .historias div .sandown{
+        display: none;
+    }
+}
 
 @media (max-width:904px) {
     .acerca-de div p {

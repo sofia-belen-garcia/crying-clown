@@ -75,7 +75,7 @@ a:hover {
 /*INDEX*/
 /*ACERCA DE INDEX*/
 .acerca-de {
-  background-image: url(../../img/img.fondo.png);
+  background-image: url(../img/img.fondo.png);
   background-attachment: fixed;
   background-size: cover;
   color: white;
@@ -162,7 +162,7 @@ a:hover {
   align-items: center;
   border: 2px solid white;
   margin: 5px;
-  background-image: url(../../img/img.fondo.png);
+  background-image: url(../img/img.fondo.png);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -280,7 +280,6 @@ form .row {
 }
 .leyendas-grid div:hover {
   transform: scale(90%);
-  box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.7);
 }
 .leyendas-grid div h3 {
   text-align: center;
@@ -298,7 +297,7 @@ form .row {
   border: 2px solid white;
   margin: 5px;
   flex-direction: column;
-  background-image: url(../../img/img.fondo.png);
+  background-image: url(../img/img.fondo.png);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -322,7 +321,7 @@ form .row {
 
 footer {
   text-align: left;
-  background-image: url(../../img/img-fondo-footer.png);
+  background-image: url(../img/img-fondo-footer.png);
   background-size: cover;
   background-attachment: fixed;
   color: white;
@@ -403,16 +402,16 @@ footer section h3 {
     height: 270px;
   }
   .acerca-de {
-    background-image: url(../../img/img.fondo.media.png);
+    background-image: url(../img/img.fondo.media.png);
   }
   .logo {
     display: none;
   }
   footer {
-    background-image: url(../../img/img-fondo-footer-media.png);
+    background-image: url(../img/img-fondo-footer-media.png);
   }
   .historias div div {
-    background-image: url(../../img/img.fondo.media.png);
+    background-image: url(../img/img.fondo.media.png);
   }
   .acerca-de .acerca-de-imgs div .payaso3 {
     display: none;

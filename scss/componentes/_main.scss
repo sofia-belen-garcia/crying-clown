@@ -2,7 +2,7 @@
 
 /*ACERCA DE INDEX*/
 .acerca-de {
-    background-image: url(../../img/img.fondo.png);
+    background-image: url(../img/img.fondo.png);
     background-attachment: fixed;
     background-size: cover;
     color: $color-enlace;
@@ -124,7 +124,7 @@
             @include flex (flex, center, center);
             border: 2px solid $color-enlace;
             margin: 5px;
-            background-image: url(../../img/img.fondo.png);
+            background-image: url(../img/img.fondo.png);
             background-attachment: fixed;
             background-size: cover;
 
@@ -275,7 +275,6 @@ form .row {
                     transition: 1s;
                     &:hover{
                         transform: scale(90%);
-                        box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.7);
                     }
 
         h3 {
@@ -302,7 +301,7 @@ form .row {
             border: 2px solid $color-enlace;
             margin: 5px;
             flex-direction: column;
-            background-image: url(../../img/img.fondo.png);
+            background-image: url(../img/img.fondo.png);
             background-attachment: fixed;
             background-size: cover;
 

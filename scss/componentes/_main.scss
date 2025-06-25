@@ -72,8 +72,17 @@
         height: 300px;
         transition: 1s;
                     &:hover{
-                        transform: scale(90%);
+                        position: relative;
+                        animation: animacion 2s infinite alternate;
                     }
+    }
+    @keyframes animacion{
+        0%{
+            left: 0;
+        }
+        100%{
+            left: 200px;
+        }
     }
 
     div {

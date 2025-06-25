@@ -125,7 +125,16 @@ a:hover {
   transition: 1s;
 }
 .leyendas-index .pennywise:hover {
-  transform: scale(90%);
+  position: relative;
+  animation: animacion 2s infinite alternate;
+}
+@keyframes animacion {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 200px;
+  }
 }
 .leyendas-index div h2 {
   text-align: center;
